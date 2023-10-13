@@ -11,7 +11,7 @@ const CreatePlane = () => {
 
     return (
         <div className='bg-blue-300 p-5 rounded-xl container'>
-            <h1 className='text-center text-4xl font-semibold my-5'>How to Create a <span className='text-blue-500'>Aeroplane</span></h1>
+            <h1 className='text-center text-4xl font-semibold my-5'>How to Create a <span className='text-blue-500'>Car</span></h1>
             <div className="hero bg-blue-300">
                 <div className="hero-content flex-col lg:flex-row">
                     <div data-aos="fade-up">

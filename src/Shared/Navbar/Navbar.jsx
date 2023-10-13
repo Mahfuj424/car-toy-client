@@ -37,13 +37,14 @@ const Navbar = () => {
                               </ul>
                          </div>
                          <Link to='/' className="text-xl  flex items-center cursor-pointer">
-                               <span className='text-black text-2xl ms-2'>Find Best Car</span>
+                               <span className='text-black text-3xl font-bold ms-2'>Baby toy</span>
                          </Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                          <ul className="menu menu-horizontal items-center px-1">
                               {navItem}
                          </ul>
+                         
                     </div>
                     <div className="navbar-end">
                          <div className="avatar">

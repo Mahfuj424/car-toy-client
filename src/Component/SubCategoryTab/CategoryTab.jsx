@@ -41,7 +41,7 @@ const CategoryTab = () => {
             <Tabs>
                 <TabList className=' justify-center md:gap-5 md:flex'>
                     <Tab onClick={() => setTab('Racing car')} className='border-blue-500 cursor-pointer border-2 rounded-lg py-2 px-3'>Racing Car</Tab>
-                    <Tab onClick={() => setTab('Police car')} className='border-blue-500 md:my-0 cursor-pointer border-2 rounded-lg py-2 px-3'>Passengers Planes</Tab>
+                    <Tab onClick={() => setTab('Police car')} className='border-blue-500 md:my-0 cursor-pointer border-2 rounded-lg py-2 px-3'>Police Car</Tab>
                     <Tab onClick={() => setTab('Trak')} className='border-blue-500 cursor-pointer border-2 rounded-lg py-2 px-3'>Tark</Tab>
                 </TabList>
 

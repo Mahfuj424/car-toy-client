@@ -103,7 +103,8 @@ const AllToy = () => {
                     {/* head */}
                     <thead>
                         <tr className='bg-gray-300 font-bold text-black'>
-                            <th>Serial</th>
+                            <th>SL</th>
+                            <th>Image</th>
                             <th>Seller Name</th>
                             <th>Toy Name</th>
                             <th>Sub Category</th>
@@ -114,11 +115,14 @@ const AllToy = () => {
                     </thead>
                     {
                         toys.map((toy, index) => {
-                            const { _id, sellerName, name, subcategory, quantity, price } = toy;
+                            const { _id, image, sellerName, name, subcategory, quantity, price } = toy;
                             return <tbody key={toy._id}>
                                 {/* row 1 */}
                                 <tr className='hover:bg-gray-200'>
                                     <th>{index + 1}</th>
+                                    <th className='h-20 w-20'>
+                                        <img src={image} alt="" />
+                                    </th>
                                     <td>{sellerName}</td>
                                     <td>{name}</td>
                                     <td>{subcategory}</td>

@@ -18,7 +18,7 @@ const ToyDetails = () => {
                 <div className="hero-content flex flex-col">
                     <img src={image} className="w-[70%] h-[400px] rounded-lg shadow-2xl" alt='Toy Image' />
                     <div className='w-[70%]  rounded-xl shadow-2xl p-3 border-4 flex-col gap-3 pl-5'>
-                        <h1 className="py-3"><span className='font-bold'>Name:</span> {name}</h1>
+                        <h1 className="py-3 text-2xl"><span className='font-bold'>Name:</span> {name}</h1>
                         <h2><span className='font-bold'>Seller Name:</span> {sellerName}</h2>
                         <h2 className="py-3"><span className='font-bold'>Seller Email:</span> {sellerEmail}</h2>
                         <h2><span className='font-bold'>SubCategory:</span> {subcategory}</h2>
