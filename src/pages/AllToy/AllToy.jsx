@@ -20,7 +20,7 @@ const AllToy = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/allToy')
+        fetch('https://car-toy-server-tau.vercel.app/allToy')
             .then(res => res.json())
             .then(data => {
                 setToys(data)
@@ -30,7 +30,7 @@ const AllToy = () => {
 
 
     const handleSearch = () => {
-        fetch(`http://localhost:5000/searchText?search=${searchText}`)
+        fetch(`https://car-toy-server-tau.vercel.app/searchText?search=${searchText}`)
             .then(res => res.json())
             .then(data => setToys(data))
     };
@@ -52,12 +52,12 @@ const AllToy = () => {
 
 
     useEffect(() => {
-        let apiUrl = `http://localhost:5000/searchText?search=${searchText}`;
+        let apiUrl = `https://car-toy-server-tau.vercel.app/searchText?search=${searchText}`;
         if (sortBy) {
             apiUrl += `?sortBy=${sortBy}`;
         }
 
-        fetch(`http://localhost:5000/allToy`)
+        fetch(`https://car-toy-server-tau.vercel.app/allToy`)
             .then(res => res.json())
             .then(data => {
                 const parsedData = data.map(toy => ({
@@ -86,14 +86,14 @@ const AllToy = () => {
             <div className='flex flex-row-reverse justify-around'>
                 <div className='flex justify-end mb-12'>
                     <select value={sortBy} onChange={handleSortByChange}
-                        className='border-2 p-2 border-success'
+                        className='border-2 p-2 border-[#F4D160] rounded-xl'
                     >
                         <option value="">Sort By</option>
                         <option value="lower">Lower Price</option>
                         <option value="higher">Higher Price</option>
                     </select>
                 </div>
-                <div className="form-control flex flex-row justify-center mb-5">
+                <div className="form-control flex md:flex-row justify-center mb-5">
                     <input onChange={(e) => setSearchText(e.target.value)} type="text" placeholder="search" className="input input-bordered" />
                     <input onClick={handleSearch} className='button' type="submit" value="Search" />
                 </div>

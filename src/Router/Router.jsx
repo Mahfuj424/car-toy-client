@@ -11,7 +11,7 @@ import AddToy from "../pages/AddToy/AddToy";
 import ToyDetails from "../pages/ToyDetails/ToyDetails";
 import PrivetRoute from "../Component/PrivetRoute/PrivetRoute";
 import EditToy from "../pages/EditToy/EditToy";
-   
+
 
 const Router = createBrowserRouter([
      {
@@ -20,41 +20,41 @@ const Router = createBrowserRouter([
           children: [
                {
                     path: '/',
-                    element: <Home/>
+                    element: <Home />
                },
                {
                     path: '/login',
-                    element: <Login/>
+                    element: <Login />
                },
                {
                     path: '/register',
-                    element: <Register/>
+                    element: <Register />
                },
                {
                     path: '/allToy',
-                    element: <AllToy/>
+                    element: <AllToy />
                },
                {
                     path: '/myToy',
-                    element: <MyToy/>
+                    element: <MyToy />
                },
                {
                     path: 'addToy',
-                    element: <AddToy/>
-               }, 
+                    element: <AddToy />
+               },
                {
                     path: 'toyDetails/:id',
-                    element: <PrivetRoute><ToyDetails/></PrivetRoute>,
-                    loader: ()=> fetch(`http://localhost:5000/allToy`)
+                    element: <PrivetRoute><ToyDetails /></PrivetRoute>,
+                    loader: () => fetch(`https://car-toy-server-tau.vercel.app/allToy`)
                },
                {
                     path: 'updateToy/:id',
                     element: <EditToy />,
-                    loader: ()=> fetch(`http://localhost:5000/allToy`)
+                    loader: () => fetch(`https://car-toy-server-tau.vercel.app/allToy`)
                }
           ]
      }
 ])
-     
+
 
 export default Router;

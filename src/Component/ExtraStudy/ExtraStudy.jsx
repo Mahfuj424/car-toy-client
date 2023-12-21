@@ -9,7 +9,7 @@ import { PiHandbagBold } from "react-icons/pi";
 
 const ExtraStudy = () => {
     return (
-        <div className='container mt-5'>
+        <div className='mt-5'>
             <div className='featured-bg bg-fixed my-20 py-20 text-gray-200'>
                 <div className=' bg-gray-200 text-black py-28 px-3 bg-opacity-50'>
                     <div className='md:flex gap-10 mt-8 max-w-4xl mx-auto '>
@@ -17,7 +17,7 @@ const ExtraStudy = () => {
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                             <div>
 
-                                <p className='text-4xl'><span className='text-5xl font-bold text-blue-400'>Research From The</span> World’s <br /> Leading Experts</p>
+                                <p className='text-4xl text-gray-600'><span className='text-5xl font-bold text-[#F4D160]'>Research From The</span> World’s <br /> Leading Experts</p>
                                 <p>Nullam suscipit id ante bibendum bibendum. Vivamus interdum gravida justo id venenatis. tempus velit sed, lobortis metus. Donec id tincidunt libero, eget dapibus quam. Aenean felis ex, blandit pretium pharetra eu.</p>
                                 <button className='button mt-5'>Sign Up Now</button>
                             </div>

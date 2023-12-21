@@ -11,6 +11,8 @@ const ToyDetails = () => {
     const singleToy = toyData && toyData.find(data => data._id == id)
 
     const { image, name, quantity, description, sellerEmail, sellerName, subcategory, rating, price } = singleToy;
+
+    console.log(image);
     return (
         <div className='container'>
             <h1 className='text-3xl text-center mt-5'>Toy Details</h1>

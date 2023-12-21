@@ -17,11 +17,12 @@ import group7 from './car toy/car.jpg'
 const Gallery = () => {
     return (
         <section className="">
-            <h1 className="text-4xl text-bold text-center text-blue-400">Gallery</h1>
+            <h1 className="text-4xl text-bold text-center text-[#F4D160]">Gallery</h1>
             <Swiper
                 slidesPerView={4}
                 spaceBetween={30}
                 centeredSlides={true}
+                autoplay
                 
                 pagination={{
                     clickable: true,

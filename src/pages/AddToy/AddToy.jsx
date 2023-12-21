@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import  { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import AllToy from '../allToy/AllToy';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../AuthProvider/AuthProvider';
@@ -12,7 +12,7 @@ const AddToy = () => {
     const [toys, setToys] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/addToy')
+        fetch('https://car-toy-server-tau.vercel.app/addToy')
             .then(res => res.json())
             .then(data => setToys(data))
     }, [])
@@ -32,7 +32,7 @@ const AddToy = () => {
         const addToy = { image, name, sellerEmail, sellerName, subcategory, price, rating, quantity, description }
 
 
-        fetch('http://localhost:5000/allToy', {
+        fetch('https://car-toy-server-tau.vercel.app/allToy', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -53,7 +53,7 @@ const AddToy = () => {
                 }
             })
     }
-    
+
 
     return (
         <div className='container'>

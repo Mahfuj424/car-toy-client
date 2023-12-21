@@ -29,7 +29,7 @@ const MyToys = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 //   
-                fetch(`http://localhost:5000/toy/${id}`, {
+                fetch(`https://car-toy-server-tau.vercel.app/toy/${id}`, {
                     method: 'DELETE',
                 })
                     .then(res => res.json())
@@ -49,7 +49,7 @@ const MyToys = () => {
 
 
     useEffect(() => {
-        let apiUrl = `http://localhost:5000/myToy/${user?.email}`;
+        let apiUrl = `https://car-toy-server-tau.vercel.app/myToy/${user?.email}`;
         fetch(apiUrl)
             .then(res => res.json())
             .then(data => setToys(data))
@@ -79,7 +79,7 @@ const MyToys = () => {
                     </thead>
                     {
                         toys.map((toy, index) => {
-                            const { _id,image, sellerName, name, subcategory, quantity, price } = toy;
+                            const { _id, image, sellerName, name, subcategory, quantity, price } = toy;
                             return <tbody key={_id}>
                                 {/* row 1 */}
                                 <tr className='hover:bg-gray-200'>

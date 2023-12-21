@@ -6,13 +6,13 @@ import Swal from 'sweetalert2';
 
 const EditToy = () => {
 
-     const { id } = useParams();
+    const { id } = useParams();
     const updateToy = useLoaderData();
-     console.log(updateToy);
+    console.log(updateToy);
 
-     const [toys, setToys]=useState([])
-     
-     const updateToyData =updateToy && updateToy.find(data=> data._id == id)
+    const [toys, setToys] = useState([])
+
+    const updateToyData = updateToy && updateToy.find(data => data._id == id)
     const { _id, image, name, sellerEmail, sellerName, subcategory, price, rating, quantity, description } = updateToyData;
     console.log(_id);
 
@@ -32,7 +32,7 @@ const EditToy = () => {
         console.log(image, name, sellerEmail, sellerName, subcategory, price, rating, quantity, description);
         const updatedToy = { image, name, sellerEmail, sellerName, subcategory, price, rating, quantity, description }
 
-        fetch(`http://localhost:5000/update/${_id}`, {
+        fetch(`https://car-toy-server-tau.vercel.app/update/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

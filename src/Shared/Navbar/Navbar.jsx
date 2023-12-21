@@ -7,18 +7,18 @@ const Navbar = () => {
      const { user, logOut } = useContext(AuthContext)
 
      const navItem = <div className='md:space-x-8 space-y-3 text-white md:text-black items-center md:space-y-0 pb-2 mb:pb-0 md:flex'>
-          <p className='text-lg hover:text-blue-700 transition-all'><NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-blue-700 border-blue-700' : ''} to='/'>Home</NavLink></p>
-          <p className='text-lg hover:text-blue-700 transition-all'><NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-blue-700 border-blue-700' : ''} to='/allToy'>All Toy</NavLink></p>
-          <p className='text-lg hover:text-blue-700 transition-all'>{user && <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-blue-700 border-blue-700' : ''} to='/myToy'>My Toy</NavLink>}</p>
-          <p className='text-lg hover:text-blue-700 transition-all'>{user && <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-blue-700 border-blue-700' : ''} to='/addToy'>Add Toy</NavLink>}</p>
+          <p className='text-lg hover:text-[#F4D160] transition-all'><NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-[#F4D160] border-[#F4D160]' : ''} to='/'>Home</NavLink></p>
+          <p className='text-lg hover:text-[#F4D160] transition-all'><NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-[#F4D160] border-[#F4D160]' : ''} to='/allToy'>All Toy</NavLink></p>
+          <p className='text-lg hover:text-[#F4D160] transition-all'>{user && <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-[#F4D160] border-[#F4D160]' : ''} to='/myToy'>My Toy</NavLink>}</p>
+          <p className='text-lg hover:text-[#F4D160] transition-all'>{user && <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-[#F4D160] border-[#F4D160]' : ''} to='/addToy'>Add Toy</NavLink>}</p>
 
      
-          <p className='text-lg hover:text-blue-700 transition-all '> {
+          <p className='text-lg hover:text-[#F4D160] transition-all '> {
                user ?
                     <NavLink onClick={() => logOut()}><span className='flex items-center gap-1'>
                          <span>LogOut</span> <BiArrowFromLeft /></span></NavLink>
                     :
-                    <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-blue-700 border-blue-700' : ''} to='/login'>Login</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-[#F4D160] border-[#F4D160]' : ''} to='/login'>Login</NavLink>
 
           }</p>
 
@@ -37,7 +37,8 @@ const Navbar = () => {
                               </ul>
                          </div>
                          <Link to='/' className="text-xl  flex items-center cursor-pointer">
-                               <span className='text-black text-3xl font-bold ms-2'>Baby toy</span>
+                              {/* <span className='text-[#C5FFF8] text-3xl font-bold ms-2'>Baby toy</span> */}
+                              <img className='w-20 h-12 rounded-md' src="../../../public/image/toy logo.png" alt="" />
                          </Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">

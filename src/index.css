@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.container {
+  @apply max-w-7xl mx-auto;
+}
+.button {
+  @apply btn btn-outline transition border-0 border-b-4 text-black border-[#F4D160] hover:bg-[#F4D160] hover:text-black hover:border-none;
+}
+.button2 {
+  @apply btn btn-sm btn-outline transition border-0 border-b-4 text-black border-[#F4D160] hover:bg-[#F4D160] hover:text-black hover:border-none;
+}
 
-.container{
-     @apply max-w-7xl mx-auto
+.bg-image{
+  background-image: url('/src/pages/Login/image/images.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.button{
-     @apply btn btn-outline transition border-0 border-b-4 text-black border-blue-500 hover:bg-blue-500 hover:text-black hover:border-none
-}
-.button2{
-     @apply btn btn-sm btn-outline transition border-0 border-b-4 text-black border-blue-500 hover:bg-blue-500 hover:text-black hover:border-none
-}
-
