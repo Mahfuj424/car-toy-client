@@ -25,7 +25,7 @@ const Navbar = () => {
      </div>
 
      return (
-          <div className='fixed md:bg-blue-400 font-semibold pt-4 w-full z-10 opacity-80'>
+          <div className='fixed bg-blue-400 font-semibold pt-4 w-full z-10 opacity-80'>
                <div className="navbar container p-0">
                     <div className="navbar-start">
                          <div className="dropdown">

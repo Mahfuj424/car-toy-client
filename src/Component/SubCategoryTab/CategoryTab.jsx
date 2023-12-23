@@ -39,7 +39,7 @@ const CategoryTab = () => {
         <div className='my-10 pb-10 rounded-xl px-4 container'>
             <h1 className='text-center text-3xl font-semibold pt-5 my-5'>Sub Category <span className='text-[#F4D160]'>Toy</span></h1>
             <Tabs>
-                <TabList className=' justify-center md:gap-5 md:flex'>
+                <TabList className='justify-center gap-5 flex'>
                     <Tab onClick={() => setTab('Racing car')} className='border-[#F4D160] cursor-pointer border-2 rounded-lg py-2 px-3'>Racing Car</Tab>
                     <Tab onClick={() => setTab('Police car')} className='border-[#F4D160] md:my-0 cursor-pointer border-2 rounded-lg py-2 px-3'>Police Car</Tab>
                     <Tab onClick={() => setTab('Trak')} className='border-[#F4D160] cursor-pointer border-2 rounded-lg py-2 px-3'>Tark</Tab>
@@ -81,7 +81,7 @@ const CategoryTab = () => {
                     <TabPanel className='grid md:grid-cols-3 gap-5 md:gap-3 grid-cols-1'>
                         {
                             toyData.map(toy =>
-                                <div key={toy._id} className="card w-[355px] md:w-96 bg-base-100 shadow-xl">
+                                <div key={toy._id} className="card transition-transform hover:scale-105 w-[355px] md:w-96 bg-base-200 shadow-xl">
                                     <figure className="px-10 pt-10">
                                         <img src={toy.image} alt="Military Planes" className="rounded-xl" />
                                     </figure>
@@ -98,7 +98,7 @@ const CategoryTab = () => {
                                         />
                                         <div className="card-actions">
                                             <Link to={`/toyDetails/${toy._id}`}>
-                                                <button onClick={handleToyDetails} className="btn btn-primary">View Details</button>
+                                                <button onClick={handleToyDetails} className="button">View Details</button>
                                             </Link>
                                         </div>
                                     </div>
@@ -110,7 +110,7 @@ const CategoryTab = () => {
                     <TabPanel className='grid md:grid-cols-3 gap-5 md:gap-3 grid-cols-1'>
                         {
                             toyData.map(toy =>
-                                <div key={toy._id} className="card w-[355px] md:w-96 bg-base-100 shadow-xl">
+                                <div key={toy._id} className="card transition-transform hover:scale-105 w-[355px] md:w-96 bg-base-200 shadow-xl">
                                     <figure className="px-10 pt-10">
                                         <img src={toy.image} alt="Military Planes" className="rounded-xl" />
                                     </figure>
@@ -127,7 +127,7 @@ const CategoryTab = () => {
                                         />
                                         <div className="card-actions">
                                             <Link to={`/toyDetails/${toy._id}`}>
-                                                <button onClick={handleToyDetails} className="btn btn-primary">View Details</button>
+                                                <button onClick={handleToyDetails} className="button">View Details</button>
                                             </Link>
                                         </div>
                                     </div>

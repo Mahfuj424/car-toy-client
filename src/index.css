@@ -13,7 +13,7 @@
 }
 
 .bg-image{
-  background-image: url('/src/pages/Login/image/images.jpg');
+  background-image: url('/src/pages/Login/login.png');
   background-repeat: no-repeat;
-  background-size: cover;
 }
+

@@ -39,7 +39,7 @@ const ExtraStudy = () => {
                                 </div>
                                 <div className='border bg-white rounded-lg w-36 h-36 flex items-center justify-center'>
                                     <div><PiHandbagBold  className='w-20 h-20'/>
-                                        <h2 className="absolute  text-lg text-black ">Marketing</h2>
+                                        <h2 className="absolute text-lg text-black">Marketing</h2>
                                     </div>
                                 </div>
                             </div>

@@ -2,6 +2,5 @@
      background-image: url('./bgimage.jpg');
      background-repeat: no-repeat;
      background-size: cover;
-     border-radius: 10px;
      background: linear-gradient(75deg, rgba(13, 9, 9, 0.7), rgba(10, 9, 9, 0.7)) url(latestnews),
  }
