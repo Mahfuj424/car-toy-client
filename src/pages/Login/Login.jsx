@@ -74,13 +74,15 @@ const Login = () => {
                                 <h1 className='absolute text-black left-0'><KeyIcon /></h1>
                             </div>
                             
-                            <p>You have already an account? <Link className='btn-link' to='/register'>Please Login</Link></p>
-                            <input value='Sign In' className='w-full button' />
-                            <div>
-                                <button className=' w-full button' onClick={handleGoogleUser}><span><FcGoogle/></span>Google</button>
+                            <p>Are You New? <Link className='btn-link' to='/register'>Please Sign Up</Link></p>
+                            <div className="form-control mt-6">
+                                <button className="button">Sign In</button>
                             </div>
                             
                         </form>
+                            <div className='flex justify-center mt-3'>
+                                <button className='button w-2/4' onClick={handleGoogleUser}><span><FcGoogle/></span>Google</button>
+                            </div>
                     </div>
                 </div>
                 <div className='md:w-[50%] bg-image h-screen'>
